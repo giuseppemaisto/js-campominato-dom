@@ -1,24 +1,21 @@
-//definisco funzione per la griglia
-//function generateGameGrid (){
+//FUNZIONE CHE GENRA NUMERI CASUALI 
+function createBombArray(min, max)
+{
+    let bombs = [];
+    let i = 0;
+    
+    while(i < 16){
+        let number = Math.floor(Math.random() * (max - min + 1)) + min;
+        if (!Bombs.incude(number)){
+            Bombs.push(number);
+            i++;
+        }
 
-//document.querySelector('.grid').innerHTML = '';
+    }
 
-//for(let i = 0; i < 100; i++){
- //   const cell = document.createElement('div');
- //   cell.classList.add('square');
- //   cell.innerText = i + 1;
- //   cell.addEventListener('click', function(){
- //       this.classList.toggle('clicked');
-  //      console.log(this.innerText);
- //   })
-  //  document.querySelector('.grid').appendChild(cell);
-//}
 
-//}
-
-//document.getElementById('genera').addEventListener('click', function(){
-   // generateGameGrid();
-//})
+    return Bombs;
+}
 
 //bonus
 
