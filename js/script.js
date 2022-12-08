@@ -87,6 +87,7 @@ function generateGameGrid (bombs, cellsNumber, cellsPerRow)
             }
         })
 
+
         grid.appendChild(cell);
     }
 
@@ -96,6 +97,6 @@ function generateGameGrid (bombs, cellsNumber, cellsPerRow)
     }
     
     document.getElementById('genera').addEventListener('click', function(){
-        //generateGameGrid();
+        
         CreateNewGame();
     })
