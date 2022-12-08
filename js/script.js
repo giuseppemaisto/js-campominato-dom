@@ -82,7 +82,8 @@ function generateGameGrid (bombs, cellsNumber, cellsPerRow)
             this.classList.toggle('clicked');
 
             if(bombs.includes(parseInt(this.innerText))){
-                this.classList.add('red')
+                this.classList.add('red');
+                grid.classList.add('events-none')
             }
         })
 
