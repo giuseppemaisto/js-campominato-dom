@@ -60,3 +60,7 @@ select{
   .clicked{
     background-color: aqua;
   }
+
+  .red{
+    background-color: red;
+  }
