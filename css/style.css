@@ -16,22 +16,15 @@ header{
   display: flex;
   justify-content: space-between;
 }
-button{
+button, select{
   padding: 5px 10px;
   margin:2rem 2rem;
-  background-color: rgb(64, 64, 235);
-  color: white;
+  background-color: whitesmoke;
+  color: black;
   border-radius: 10px;
   border: none;
 }
-select{
-  padding: 5px 10px;
-  margin:2rem 2rem;
-  background-color: rgb(64, 64, 235);
-  color: white;
-  border-radius: 10px;
-  border: none;
-}
+
 
 .container{
    

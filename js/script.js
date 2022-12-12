@@ -76,6 +76,9 @@ function generateGameGrid (bombs, cellsNumber, cellsPerRow)
     const grid = document.createElement('div')
     grid.classList.add('grid');
 
+    //definisco variabile contatore per tenere traccia delle caselle buone 
+    let goodCells = 0;
+
     for(let i = 1; i<=cellsNumber; i++){
         const cell = CreateSingleCell(i, cellsPerRow);
         cell.addEventListener('click', function(){
@@ -83,7 +86,11 @@ function generateGameGrid (bombs, cellsNumber, cellsPerRow)
 
             if(bombs.includes(parseInt(this.innerText))){
                 this.classList.add('red');
-                grid.classList.add('events-none')
+                grid.classList.add('events-none');
+                alert('hai preso una bomba: '+this.innerText)
+                alert('il tuo punteggio è: '+ goodCells)
+            }else{
+                goodCells++;
             }
         })
 
